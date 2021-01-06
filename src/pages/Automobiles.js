@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from './Header/Header';
 
-export default function BeautyHealth() {
+export default function Automobiles() {
   return (
     <>
-      <Header headTitle='Beauty & Health' Cname='bheader' />	
+      <Header headTitle='Automobiles' Cname='amheader' />	
     </>
   );
 }

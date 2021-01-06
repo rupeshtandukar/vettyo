@@ -5,7 +5,7 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
-  padding: 25px 0px;
+  padding: 20px 0px;
   cursor:context-menu;
 }
 .logo-img{
@@ -23,18 +23,18 @@
   border-radius: 50px;
   box-shadow: 0px 0px 0px 10px rgba(255,255,255,1);
   position: relative;
-  bottom:10px;
+  bottom:15px;
   flex-shrink: 0;
   height: 30px;
   color: #ffffff;
 }
 .nav-icon{
+  color: rgb(175,177,175);
   text-align: right;
   font-size: 18px;
   width:33vw;
   position: relative;
   bottom: 5px;
-  margin-right: 10px;
 }
 .fa-heart, .fa-bell{
   margin-right: 15px;
@@ -43,12 +43,13 @@
   text-align: center;
 }
 .srch{
-  width: 35vw;
+  width: 34vw;
   display: flex;
   justify-content:center;
   height: 50px;
   position: relative;
   left: 30px;
+  top: 5px;
 }
 
 #search {
@@ -69,7 +70,7 @@
 }
 
 .navbar {
-  background: rgb(55,66,82);
+  background: rgba(55,66,82, 0.96);
   height: 50px;
   display: flex;
   justify-content: center;
@@ -79,28 +80,31 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(7, auto);
-  grid-gap: 8px;
+  grid-template-columns: repeat(8, auto);
+  grid-gap: 6px;
   list-style: none;
   text-align: center;
   width: 90vw;
   justify-content: start;
   margin-right: 2rem;
+  margin-left: 6vw;
+  padding-inline-start: 0px;
 }
 
 .nav-item {
   display: flex;
   align-items: center;
   height: 30px;
+  font-size: 15px;
 }
 
 .nav-links {
   border-right:2px solid;
-  height: 20px;
-  margin-top: 3px;
+  height: 25px;
+  margin-top: 5px;
   color: white;
   text-decoration: none;
-  padding: 0rem 0.5rem .5rem 0.5rem;
+  padding: 0.3rem 0.5rem .5rem 0.25rem;
 }
 
 .nav-links:hover {
@@ -152,9 +156,12 @@
     transition: all 0.5s ease;
     padding-inline-start: 0px;
     justify-content: center;
+    margin: 0px;
   }
 
   .nav-menu.active {
+    position: fixed;
+    height: 103vh;
     background: rgb(55,66,82);
     left: 0;
     opacity: 1;
@@ -195,7 +202,7 @@
 
   .fa-times {
     color: rgb(249,78,78);
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
   .nav-links-mobile {
@@ -210,6 +217,9 @@
     color: #fff;
     font-size: 1.5rem;
   }
+  .nav-link-last{
+    border-right:2px solid;
+  }
 
   .nav-links-mobile:hover {
     background: #fff;
@@ -219,6 +229,7 @@
   .srch{
     margin-left:;
     width: 20vw;
+    justify-content: flex-end;
   }
   #search{
     display: none;
@@ -227,9 +238,10 @@
     display: none;
   }
   .nav-icon{
-    width: 20vw;
+    width: 25vw;
     font-size: 20px;
     text-align: right;
+    bottom: 0px;
   }
 
   button {

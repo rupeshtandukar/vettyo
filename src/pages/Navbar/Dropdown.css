@@ -2,7 +2,7 @@
   background: rgba(55,66,82,0.8);
   width: 200px;
   position: absolute;
-  top: 138px;
+  top: 145px;
   list-style: none;
   text-align: start;
 }
@@ -27,7 +27,7 @@
   width: 100%;
   text-decoration: none;
   color: #fff;
-  padding: 16px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 960px) {

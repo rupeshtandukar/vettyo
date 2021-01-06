@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from './Header/Header';
 
 export default function Electronics() {
   return (
     <>
-      <h1 className='consulting'>Electronics</h1>
+      <Header headTitle='Electronics' Cname='eheader' />	
     </>
   );
 }

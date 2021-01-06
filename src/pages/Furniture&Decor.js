@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from './Header/Header';
 
 export default function FurnitureDecor() {
   return (
     <>
-      <h1 className='consulting'>FurnitureDecor</h1>
+      <Header headTitle='Furniture & Decor' Cname='fdheader' />	
     </>
   );
 }

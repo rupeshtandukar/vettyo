@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from './Header/Header';
 
 export default function Computers() {
   return (
     <>
-      <h1 className='Header'>Computers</h1>
+      <Header headTitle='Computers' Cname='cheader' />	
     </>
   );
 }

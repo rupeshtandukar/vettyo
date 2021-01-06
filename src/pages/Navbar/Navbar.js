@@ -8,32 +8,90 @@ import { ApparelsItem } from './ApparelsItem';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
+  const [dropdown1, setDropdown1] = useState(false);
+  const [dropdown2, setDropdown2] = useState(false);
+  const [dropdown3, setDropdown3] = useState(false);
+  const [dropdown4, setDropdown4] = useState(false);
+  const [dropdown5, setDropdown5] = useState(false);
+  const [dropdown6, setDropdown6] = useState(false);
+  const [dropdown7, setDropdown7] = useState(false);
+  const [dropdown8, setDropdown8] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const onMouseEnter = () => {
+  const onMouseEnter1 = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setDropdown1(false);
     }else {
-      setDropdown(true);
+      setDropdown1(true);
+    }
+  };
+   const onMouseEnter2 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown2(false);
+    }else {
+      setDropdown2(true);
+    }
+  };
+   const onMouseEnter3 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown3(false);
+    }else {
+      setDropdown3(true);
+    }
+  };
+   const onMouseEnter4 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown4(false);
+    }else {
+      setDropdown4(true);
+    }
+  };
+   const onMouseEnter5 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown5(false);
+    }else {
+      setDropdown5(true);
+    }
+  };
+   const onMouseEnter6 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown6(false);
+    }else {
+      setDropdown6(true);
+    }
+  };
+   const onMouseEnter7 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown7(false);
+    }else {
+      setDropdown7(true);
+    }
+  };
+  const onMouseEnter8 = () => {
+    if (window.innerWidth < 960) {
+      setDropdown8(false);
+    }else {
+      setDropdown8(true);
     }
   };
 
   const onMouseLeave = () => {
-    setDropdown(false);
-    // if (window.innerWidth < 960) {
-    //   setDropdown(false);
-    // } else {
-      
-    // }
+    setDropdown1(false);
+    setDropdown2(false);
+    setDropdown3(false);
+    setDropdown4(false);
+    setDropdown5(false);
+    setDropdown6(false);
+    setDropdown7(false);
+    setDropdown8(false);
   };
 
   return (
     <>
       <div className='navlogo'>
-        <Link to='/index'>
+        <Link to='/'>
           <img className='logo-img' src={logo} alt="veetyo logo" />
         </Link>  
           <div className='srch'>
@@ -46,7 +104,7 @@ function Navbar() {
               <i className='far fa-bell'>
               <br/><span className='icon-tag'>notification</span></i>
               <i className='far fa-heart'>
-              <br/><span className='icon-tag'>Favorites</span></i>
+              <br/><span className='icon-tag'>favorites</span></i>
               <Button btnName={['add ads','far fa-plus-square']}/>
           </div>
         <div className='menu-icon' onClick={handleClick}>
@@ -55,9 +113,9 @@ function Navbar() {
       </div>
       <nav className='navbar'>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li
+          <li id='link1'
             className='nav-item'
-            onMouseEnter={onMouseEnter}
+            onMouseEnter={onMouseEnter1}
             onMouseLeave={onMouseLeave}
           >
             <Link
@@ -67,11 +125,25 @@ function Navbar() {
             >
               Apparels
             </Link>
-            {dropdown && <Dropdown items={ApparelsItem}/>}
+            {dropdown1 && <Dropdown items={ApparelsItem}/>}
           </li>
-          <li
+           <li
             className='nav-item'
-            onMouseEnter={onMouseEnter}
+            onMouseEnter={onMouseEnter2}
+            onMouseLeave={onMouseLeave}
+          >
+            <Link
+              to='/Automobiles'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Automobiles
+            </Link>
+            {dropdown2 && <Dropdown items={ApparelsItem}/>}
+          </li>
+          <li 
+            className='nav-item'
+            onMouseEnter={onMouseEnter3}
             onMouseLeave={onMouseLeave}
           >
             <Link
@@ -81,10 +153,11 @@ function Navbar() {
             >
               Beauty & Health
             </Link>
+            {dropdown3 && <Dropdown items={ApparelsItem}/>}
 
-          </li><li
+          </li><li 
             className='nav-item'
-            onMouseEnter={onMouseEnter}
+            onMouseEnter={onMouseEnter4}
             onMouseLeave={onMouseLeave}
           >
             <Link
@@ -94,10 +167,12 @@ function Navbar() {
             >
               Computer
             </Link>
+            {dropdown4 && <Dropdown items={ApparelsItem}/>}
             
-          </li><li
+          </li>
+          <li 
             className='nav-item'
-            onMouseEnter={onMouseEnter}
+            onMouseEnter={onMouseEnter5}
             onMouseLeave={onMouseLeave}
           >
             <Link
@@ -107,10 +182,12 @@ function Navbar() {
             >
               Electronics
             </Link>
+            {dropdown5 && <Dropdown items={ApparelsItem}/>}
             
-          </li><li
+          </li>
+          <li 
             className='nav-item'
-            onMouseEnter={onMouseEnter}
+            onMouseEnter={onMouseEnter6}
             onMouseLeave={onMouseLeave}
           >
             <Link
@@ -120,10 +197,11 @@ function Navbar() {
             >
               Furniture & Decor
             </Link>
+            {dropdown6 && <Dropdown items={ApparelsItem}/>}
             
-          </li><li
+          </li><li 
             className='nav-item'
-            onMouseEnter={onMouseEnter}
+            onMouseEnter={onMouseEnter7}
             onMouseLeave={onMouseLeave}
           >
             <Link
@@ -133,11 +211,12 @@ function Navbar() {
             >
               Mobile & Tablets
             </Link>
+            {dropdown7 && <Dropdown items={ApparelsItem}/>}
             
           </li>
-          <li
+          <li 
             className='nav-item'
-            onMouseEnter={onMouseEnter}
+            onMouseEnter={onMouseEnter8}
             onMouseLeave={onMouseLeave}
           >
             <Link
@@ -147,6 +226,7 @@ function Navbar() {
             >
               Real Estates
             </Link>
+            {dropdown8 && <Dropdown items={ApparelsItem}/>}
             
           </li>
         </ul>

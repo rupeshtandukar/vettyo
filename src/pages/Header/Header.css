@@ -1,0 +1,54 @@
+.header{
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 30vw;
+	width: 88vw;
+	margin: 0 6vw;
+	margin-top: 2rem;
+}
+.headTitle{
+	text-align: center;
+	color: #fff;
+	background-color: rgba(55,66,82, 0.6);
+	font-size: 2.2rem;
+	margin-top: 0;
+	width: 40vw;
+	position: relative;
+	top: 10vw;
+	left: 25vw;
+}
+.reheader {
+	background-image: url(../images/vettyo-real-estate0.jpg);
+} 
+.mt-header {
+	background-image: url(../images/vettyo-real-estate0.jpg);
+} 
+.Homeheader{
+	background-image: url(../images/vettyo-real-estate0.jpg);
+}
+.fdheader{
+	background-image: url(../images/vettyo-real-estate0.jpg);
+}
+.eheader{
+	background-image: url(../images/vettyo-real-estate0.jpg);
+}
+.cheader{
+	background-image: url(../images/vettyo-real-estate0.jpg);
+}
+.bheader{
+	background-image: url(../images/vettyo-real-estate0.jpg);
+}
+.amheader{
+	background-image: url(../images/vettyo-real-estate0.jpg);
+}
+.apheader{
+	background-image: url(../images/vettyo-real-estate0.jpg);
+}
+
+@media screen and (max-width: 960px) {
+
+.headTitle{
+	font-size: 1.5rem;
+}
+
+}

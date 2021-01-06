@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from './Header/Header';
 
 export default function Apparels() {
   return (
     <>
-      <h1 className='consulting'>Apparels</h1>
+      <Header headTitle='Apparels' Cname='apheader' />	
     </>
   );
 }

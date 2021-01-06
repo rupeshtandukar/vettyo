@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from './Header/Header';
 
 export default function MobileTablets() {
   return (
     <>
-      <h1 className='consulting'>MobileTablets</h1>
+      <Header headTitle='MobileTablets' Cname='mt-header' />
     </>
   );
 }

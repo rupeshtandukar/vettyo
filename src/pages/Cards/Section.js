@@ -6,7 +6,7 @@ import Cardlist from './Cardlist';
 const Section = ({sectionTitle, items}) => {
 	return(
 		<div className='card-sec'>
-			<h1>{sectionTitle}</h1>
+			<h2>{sectionTitle}</h2>
 			<Cardlist item={items}/>
 		</div>
 		);
