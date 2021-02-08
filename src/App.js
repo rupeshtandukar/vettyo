@@ -3,6 +3,8 @@ import Navbar from './pages/Navbar/Navbar';
 // import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Login from './pages/Forms/Login';
+import Register from './pages/Forms/Register';
 import Apparels from './pages/Apparels';
 import Automobiles from './pages/Automobiles';
 import BeautyHealth from './pages/Beauty&Health';
@@ -27,6 +29,8 @@ function App() {
         <Route path='/Furniture&Decor' component={FurnitureDecor} />
         <Route path='/Mobile&Tablets' component={MobileTablets} />
         <Route path='/RealEstate' component={RealEstate} />
+        <Route path='/Login' component={Login} />
+        <Route path='/Register' component={Register} />
       </Switch>
       <Footer />
     </Router>

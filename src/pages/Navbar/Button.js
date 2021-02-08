@@ -2,10 +2,10 @@ import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
 
-export function Button({btnName}) {
+export function Button({btnName, btnclass, btpath}) {
   return (
-    <Link to='sign-up'>
-      <button className='btn'><i className={`${btnName[1]}`}/> {btnName[0]}</button>
+    <Link to={btpath}>
+      <button className={btnclass}><i className={`${btnName[1]}`}/> {btnName[0]}</button>
     </Link>
   );
 }

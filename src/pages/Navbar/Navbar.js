@@ -105,7 +105,7 @@ function Navbar() {
               <br/><span className='icon-tag'>notification</span></i>
               <i className='far fa-heart'>
               <br/><span className='icon-tag'>favorites</span></i>
-              <Button btnName={['add ads','far fa-plus-square']}/>
+              <Button btnName={['add ads','far fa-plus-square']} btnclass={'btn'} btpath={'/Login'}/>
           </div>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

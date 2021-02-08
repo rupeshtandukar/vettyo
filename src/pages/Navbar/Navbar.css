@@ -244,7 +244,7 @@
     bottom: 0px;
   }
 
-  button {
+.btn {
     display: none;
   }
 }
